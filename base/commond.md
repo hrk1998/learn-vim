@@ -1,10 +1,14 @@
 vim filename 新建或者时打开一个文件，光标位于第一行首部
 
 ------------------------------------------------------------------------------------
-    for test commond, this is a exmaple sentence. This is the next sentence.
-           Oh, this is sentence of the next paragraph. and this is the second sentence of this paragraph.
+    FOR test commond, this is a exmaple sentence. This is the next sentence.
+           Hi, hi, this is sentence of the next paragraph. and this is the second sentence of this paragraph.
         this is a number sentence 1234567890.
 chars abcdefghijklmnopqrstuvwxyz
+abcdefg
+public void method(Integer nums, String s, char c, boolean flag)
+public void method2(String s)
+private void method3(String s)
 ------------------------------------------------------------------------------------
 
 
@@ -61,7 +65,7 @@ n+yy 复制光标所在行，此命令前可以家数字n，可以复制多行
 ## 剪切
 dd 剪切光标所在行
 数字+dd 一光标所在行为准（包括当前行）， 向下剪切指定行数
-D 剪切光标所在行3
+D 剪切光标所在位置到行末的内容
 
 ## 粘贴
 p 剪切板内容粘贴到光标后
@@ -77,50 +81,31 @@ dw 移动光标到单词的开头以删除该单词
 dG 删除光标所在行一直到文件末尾的所有内容
 :1,2d 删除从1行到2行的文本内容
 
+## 撤销/恢复
+u 撤销最近修改
+ctrl+r 恢复（疑问：撤销和恢复有什么区别？）
+U 撤销当前行的所有编辑
 
+## 字符转换
+~ 转换大小写
+u 变成小写
+U 变成大写
 
+## 编辑命令的快捷键
+上或ctrl+p 上一条命令
+下或ctrl+n 下一条命令
+ctrl+b 移动到命令行开头
+ctrl+e 移动到命令行结尾
+ctrl+左 向左一个单词
+ctrl+右 向右一个单词
 
+# 末行模式（:xxx）
+## 保存/退出文件操作
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 查找：“/关键词”
+/abc 从光标所在位置向前查找字符串abc
+/^abc 查找以abc为行首的行
+/abc$ 查找以abc为行尾的行
+?abc 从光标位置向后查找字符串abc
+n或; 向同一方向重复上次的查找指令
+N或, 向相反方向重复上次的查找指令
